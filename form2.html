@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+  <form action="myfile.js">
+
+    <fieldset>
+
+      <legend>Feedback</legend>
+
+        <label for="username">Username:</label><br>
+        <input required type="text" id="username">
+        <br><br>
+
+        <label for="Email">Email</label>
+        <input required type="email" id="Email">
+        <br><br>
+
+        <label for="complaint">Choose your complaint/query from the list or type:</label>
+        <input list="issues" name="complaint" id="complaint">
+
+        <datalist id="issues">
+          <option value="bad-food-quality">
+          <option value="late-delivery">
+          <option value="complaint-about-delivery-person">
+          <option value="website-issue">
+          <option value="app-issue">
+        </datalist>
+        <br>
+
+        <label for="Subject">Subject</label>
+        <input required type="text" id="Subject">
+        <br><br>
+
+        <label for="feedback"> Enter your feedback:</label><br>
+        <textarea cols="37" rows="4" required name="feedback" id="feedback"></textarea>
+        <br><br>
+
+        <label for="Age"> Age:</label><br>
+        <input type="number" min="18" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </div>
+
+    </fieldset>
+
+  </form>
+
+</body>
+
+</html>
